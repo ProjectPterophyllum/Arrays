@@ -3,10 +3,9 @@
 using namespace std;
 void enterarraywithkeyboard(int array[], int N)
 {
-	cout << "¬водите значени€ массива с клавиатуры: " << endl;
+	cout << "¬водите значени€ массива с клавиатуры через пробел: " << endl;
 	for (int i = 0; i < N; i++)
 	{
-		cout << "«начение массива " << i + 1 << ": ";
 		cin >> array[i];
 	}
 }
@@ -20,6 +19,13 @@ void coutarray(int array[], int N)
 	for (int i = 0; i < N; i++)
 		cout << array[i] << " ";
 	cout << endl;
+}
+void coutarrayrev(int array[], int N)
+{
+	for (int i = N - 1; i >= 0; i--)
+	{
+		cout << array[i] << " ";
+	}
 }
 int randomize(int start, int end)
 {
@@ -46,5 +52,5 @@ void main()
 	randomfillarray(0, 15, array, N);
 	coutarray(array, N);
 	enterarraywithkeyboard(array, N);
-	coutarray(array, N);
+	coutarrayrev(array, N);
 }
