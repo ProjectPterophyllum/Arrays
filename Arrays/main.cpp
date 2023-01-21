@@ -1,9 +1,9 @@
-//Arrays
+ï»¿//Arrays
 #include <iostream>
 using namespace std;
 void enterarraywithkeyboard(int array[], int N)
 {
-	cout << "Ââîäèòå çíà÷åíèÿ ìàññèâà ñ êëàâèàòóðû ÷åðåç ïðîáåë: " << endl;
+	cout << "Ð’Ð²Ð¾Ð´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ ÐºÐ»Ð°Ð²Ð¸Ð°Ñ‚ÑƒÑ€Ñ‹ Ñ‡ÐµÑ€ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ»: " << endl;
 	for (int i = 0; i < N; i++)
 	{
 		cin >> array[i];
