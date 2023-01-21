@@ -38,19 +38,29 @@ void randomfillarray(int start, int end, int array[], int N)
 	for (int i = 0; i < N; i++)
 		array[i] = randomize(start, end);
 }
+int summelementsofarray(int array[], int N)
+{
+	int sum = 0;
+	for (int i = 0; i < N; i++)
+	{
+		sum += array[i];
+	}
+	return sum;
+}
 void main()
 {
 	srand(time(NULL));
 	setlocale(LC_ALL, "");
 	const int N = 10;
 	int array[N] = { 3,5,8 };
-	coutarray(array, N);
+	/*coutarray(array, N);
 	fillarray(array, N);
 	coutarray(array, N);
 	array[9] = 1024;
-	coutarray(array, N);
+	coutarray(array, N);*/
 	randomfillarray(0, 15, array, N);
-	coutarray(array, N);
+	cout << summelementsofarray(array, N);
+	/*coutarray(array, N);
 	enterarraywithkeyboard(array, N);
-	coutarrayrev(array, N);
+	coutarrayrev(array, N);*/
 }
