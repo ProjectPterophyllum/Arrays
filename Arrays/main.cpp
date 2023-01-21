@@ -59,6 +59,7 @@ void main()
 	array[9] = 1024;
 	coutarray(array, N);*/
 	randomfillarray(0, 15, array, N);
+	coutarray(array, N);
 	cout << summelementsofarray(array, N);
 	/*coutarray(array, N);
 	enterarraywithkeyboard(array, N);
